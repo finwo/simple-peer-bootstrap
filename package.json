@@ -17,6 +17,9 @@
   "bugs": {
     "url": "https://github.com/finwo/simple-peer-bootstrap/issues"
   },
+  "funding": {
+    "url": "https://github.com/sponsors/finwo"
+  },
   "homepage": "https://github.com/finwo/simple-peer-bootstrap#readme",
   "dependencies": {
     "node-fetch": "^2.6.1",
