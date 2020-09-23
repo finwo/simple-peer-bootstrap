@@ -3,16 +3,15 @@ const Peer   = require('simple-peer');
 const method = 'POST';
 
 module.exports = {
-  _fetch   : root.fetch,
-  bootstrap: function() {
-    const fetch = module.exports._fetch;
-    const peer  = new Peer({ initiator: true, trickle: false });
+  connect: function(url) {
+    const fetch = module.exports._fetch || root.fetch;
+    const peer  = new Peer({ initiator: true, trickle: false, wrtc: module.exports._wrtc });
 
     peer.on('signal', data => {
       const body = JSON.stringify(data);
-      fetch({ method, body })
+      fetch(url, { method, body })
         .then(res => res.json())
-        .then(peer.signal);
+        .then(data => peer.signal(data));
     });
 
     return peer;
