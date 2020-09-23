@@ -10,6 +10,8 @@ This package ONLY handles bootstrapping a connection with a known server,
 everything else (like setting up more connections, data/protocol handling, etc)
 is left to the application.
 
+No security features, like passwords or an extra encryption layer, are provided.
+
 ## Install
 
 ```sh
@@ -18,7 +20,9 @@ npm install --save simple-peer-bootstrap
 
 ## Usage
 
-### Browser
+### Client
+
+Available in both the browser & node.
 
 ```js
 const bootstrap = require('simple-peer-bootstrap');
@@ -30,7 +34,9 @@ peer.on('connect', () => {
 });
 ```
 
-### node
+### Server
+
+Only available in node.
 
 ```js
 const bootstrap = require('simple-peer-bootstrap');
