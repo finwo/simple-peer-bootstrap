@@ -25,5 +25,15 @@
     "node-fetch": "^2.6.1",
     "simple-peer": "^9.7.2",
     "wrtc": "^0.4.6"
-  }
+  },
+  "keywords": [
+    "data",
+    "data channel",
+    "p2p",
+    "peer",
+    "peer-to-peer",
+    "webrtc",
+    "simple-peer",
+    "bootstrap"
+  ]
 }
