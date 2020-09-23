@@ -1,10 +1,14 @@
 # simple-peer-bootstrap
 
-Server & Browser bootstrap connections to get into a network
+Bootstrap connections to get into a webrtc network
 
 simple-peer-bootstrap creates a simple way to set up the initial
 [simple-peer](https://npmjs.com/package/simple-peer) connection into the network
 you create, allowing you to focus on things like your application.
+
+This package ONLY handles bootstrapping a connection with a known server,
+everything else (like setting up more connections, data/protocol handling, etc)
+is left to the application.
 
 ## Install
 
