@@ -33,9 +33,6 @@ bootstrap.server = function(options, handler) {
     const parsedUrl = new URL(req.url, `http://${req.headers.host}`);
     if (parsedUrl.pathname !== '/bootstrap') return;
 
-    // Handle OPTIONS
-    console.log(req.method);
-
     // Ensure POST
     if (req.method !== 'POST') return;
 
