@@ -23,6 +23,7 @@
   "homepage": "https://github.com/finwo/simple-peer-bootstrap#readme",
   "dependencies": {
     "node-fetch": "^2.6.1",
+    "node-pre-gyp": "^0.17.0",
     "simple-peer": "^9.7.2",
     "wrtc": "^0.4.6"
   },
